@@ -13,11 +13,170 @@ ul {
 a {
   text-decoration: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.row {
+  display: flex;
+}
+.text-align {
+  text-align: center;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column-direction {
+  flex-direction: column;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.position-absoulute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.position-relative {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.container-full {
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+.padding-60 {
+  padding: 60px 0;
+}
+.menu-link a {
+  color: #fff;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.menu {
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}
+.menu .sp {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+}
+.menu-background {
+  position: relative;
+  background-image: url(https://preview.colorlib.com/theme/hepta/images/hero_1.jpg.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.menu-background::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.3;
+  min-height: 700px;
+}
+
+.menu-background h1 {
+  font-size: 80px;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.menu-background p {
+  font-size: 30px;
+  color: #fff;
   font-family: "Mukta Mahee";
+  margin: 0;
+  margin-bottom: 48px;
+  font-weight: 200;
+}
+.menu-background .template a {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+}
+.menu-background .template a:hover {
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+.menu-background .visit-link a {
+  color: #f8f9fa;
+  border: 2px solid #f8f9fa;
+  display: inline-block;
+  padding: 16px 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 4px;
+  background-color: transparent;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+.menu-background .visit-link a:hover {
+  color: #000;
+  background-color: #fff;
 }
