@@ -106,12 +106,43 @@ a {
   width: 40px;
   height: 30px;
   cursor: pointer;
+  float: right;
+  position: relative;
+  z-index: 10;
+  transition: all 1s;
 }
-.menu .sp {
+.menu span {
   display: block;
-  width: 40px;
+  width: 100%;
   height: 2px;
   background-color: #fff;
+  position: absolute;
+  left: 0;
+  transition: all 0.4s;
+}
+.menu span:nth-child(1) {
+  top: 0;
+}
+.menu span:nth-child(2) {
+  top: 10px;
+}
+.menu span:nth-child(3) {
+  top: 20px;
+}
+#black.open span {
+  background-color: #000;
+}
+#black.open span:nth-child(1) {
+  transform: rotate(135deg);
+  top: 10px;
+}
+#black.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+#black.open span:nth-child(3) {
+  transform: rotate(-135deg);
+  top: 10px;
 }
 .menu-background {
   position: relative;
@@ -179,4 +210,34 @@ a {
 .menu-background .visit-link a:hover {
   color: #000;
   background-color: #fff;
+}
+.main-menu {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+  font-size: 40px;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+#show.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.main-menu ul li a {
+  display: block;
+  transition: all 0.3s;
+  color: #000;
+  margin-bottom: 15px;
+}
+.main-menu ul li:first-child a {
+  color: #65c0ba;
+}
+.main-menu ul li a:hover {
+  color: #65c0ba;
 }

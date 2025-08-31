@@ -21,11 +21,25 @@
       <header class="padding-60">
         <div class="container-full">
           <div class="row space-between align-items-center position-relative">
-            <div class="menu-link"><a href="#">hepta</a></div>
-            <div class="menu flex" id="main-menu">
-              <span class="one first sp"></span>
-              <span class="secound sp"></span>
-              <span class="one third sp"></span>
+            <div class="menu-link col-4">
+              <a href="#" target="_blank">hepta</a>
+            </div>
+            <div class="col-8">
+              <div class="menu" id="black" onclick="toggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="main-menu" id="show">
+                <ul class="position-absoulute-center text-align">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Hotels</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -43,5 +57,12 @@
         </div>
       </header>
     </section>
+    <script>
+      var element = document.getElementById("show");
+      function toggle() {
+        element.classList.toggle("visible");
+        document.getElementById("black").classList.toggle("open");
+      }
+    </script>
   </body>
 </html>
